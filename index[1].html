@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Untitled Game</title>
+		<script src="sweetalert/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="sweetalert/sweetalert.css">
+		<style>
+			html {
+			zoom: 100%;
+			}
+		</style>
+		<script>
+			function leaveApp() {
+				window.history.back();
+			}
+			function goBack() {
+				swal({
+					title: "Are you sure?",
+					text: "You'll be leaving the app!",
+					type: "warning",
+					showCancelButton: true,
+					confirmButtonColor: "#DD6B55",
+					confirmButtonText: "Yes, leave!",
+					closeOnConfirm: false
+				},
+				function(){
+					swal({
+						title: "Confirmed!",
+						text: "You'll be leaving soon.",
+						type: "success",
+						timer: "3500",
+						showCancelButton: "false"
+					});
+				});
+				window.history.back(-1);
+			}
+		</script>
+	</head>
+	<body>
+		<h5>Welcome To The Home Of This Untitled Game</h5>
+		<a href="gameSpecs/gameSpecs.html">click me</a>
+		<button href="data:_blank" onClick="goBack()">Close App</button>
+		<br/>
+		<iframe src="gameSpecs/gameSpecs.html" >Your Browser Doesn't Support iFrame</iframe>
+	</body>
+</html>
