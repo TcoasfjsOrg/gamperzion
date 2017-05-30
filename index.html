@@ -4,19 +4,9 @@
 		<title>This is the webpage's title.</title>
 		<script src="https://tcoasfjs.github.io/gamperzion/sweetalert.min.js"></script>
 		<link href="https://tcoasfjs.github.io/gamperzion/sweetalert.css"/>
-		<script>
-			function worksCorrectly() {
-				swal({
-					title: "It worked.",
-					text: "I will close in 2 seconds.",
-					timer: 2000,
-					showConfirmButton: false
-				});
-			}
-		</script>
 	</head>
 	<body>
-		<button onClick="worksCorrectly()">This is a button.</button>
+		<button onClick="swal('Good job!','You clicked the button!','success')">This is a button.</button>
 		<p>This is the first paragraph of the webpage.</p>
 	</body>
 </html>
