@@ -2,10 +2,19 @@
 	<head>
 		<title>This is the webpage's title.</title>
 		<script src="https://tcoasfjs.github.io/gamperzion/sweetalert.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script>
+			function hidden() {
+				$(this).click(function(){
+					$(this).hide;
+				)
+			};
+		</script>
 		<link href="https://tcoasfjs.github.io/gamperzion/sweetalert.css"/>
 	</head>
 	<body>
 		<button onClick='alert("You successfully clicked the button!")'>This is a button.</button>
-		<p>This is the first paragraph of the webpage.</p>
+		<p onClick="hidden()">This is the first paragraph of the webpage.</p>
+		<div id="
 	</body>
 </html>
