@@ -1,2 +1,2 @@
 # gamperzion
-Just a spot to put ideas on for now.
+Just a spot to work on sone things.
