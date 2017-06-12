@@ -1,2 +1,2 @@
 # gamperzion
-Just a spot to work on sone things.
+Just a spot to work on some things.
